@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planeta Animal</title>
+
+  <!-- Font Awesome (ícones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <!-- Navegação -->
+  <nav class="menu" role="navigation" aria-label="Menu principal">
+    <ul>
+      <li><a href="#inicio"><i class="fa-solid fa-paw"></i> Início</a></li>
+      <li><a href="#sobre"><i class="fa-solid fa-info-circle"></i> Sobre</a></li>
+      <li><a href="#impacto"><i class="fa-solid fa-hand-holding-heart"></i> Impacto</a></li>
+      <li><a href="#contato"><i class="fa-solid fa-envelope"></i> Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Cabeçalho -->
+  <header id="inicio" class="site-header" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('1.jpg');">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Logo Planeta Animal">
+    </div>
+    <h1>Bem-vindo ao Planeta Animal</h1>
+    <p class="lead">
+      Cuidando de quem não pode pedir ajuda. O <strong>Planeta Animal</strong> é uma ONG dedicada à proteção, resgate e adoção responsável de animais em situação de vulnerabilidade.
+    </p>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <!-- SOBRE -->
+    <section id="sobre" class="container">
+      <h2>Sobre o Projeto</h2>
+      <p>
+        O <strong>Planeta Animal</strong> nasceu do amor e da necessidade de oferecer uma nova chance a cães e gatos abandonados.
+        Desde 2018, nossa missão é acolher, tratar e encontrar lares cheios de carinho para esses animais, promovendo também a conscientização sobre a posse responsável e o respeito à vida animal.
+      </p>
+
+      <h3 class="opcoes-title">Nossas Ações</h3>
+
+      <div class="images">
+        <figure>
+          <img src="12.jpg" alt="Cães resgatados no abrigo" loading="lazy">
+          <figcaption>Resgate e acolhimento</figcaption>
+        </figure>
+
+        <figure>
+          <img src="1.jpg" alt="Feira de adoção de pets" loading="lazy">
+          <figcaption>Feiras de adoção</figcaption>
+        </figure>
+
+        <figure>
+          <img src="2.jpg" alt="Atividade educativa sobre animais" loading="lazy">
+          <figcaption>Educação e conscientização</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        Trabalhamos com voluntários, clínicas parceiras e doações que tornam possível oferecer tratamento veterinário, alimentação, abrigo e campanhas de castração.
+      </p>
+    </section>
+
+    <!-- MISSÃO -->
+    <section id="missao" class="container">
+      <h2>Nossa Missão</h2>
+      <p>
+        Proteger, acolher e transformar vidas — tanto dos animais quanto das pessoas. Acreditamos que cada gesto de compaixão cria um mundo melhor.
+      </p>
+
+      <p><strong>🐾 O que fazemos:</strong></p>
+      <ul>
+        <li>Resgate e tratamento de animais abandonados.</li>
+        <li>Feiras de adoção e campanhas de castração.</li>
+        <li>Projetos de educação sobre bem-estar animal.</li>
+        <li>Parcerias com escolas e comunidades para conscientização.</li>
+        <li>Captação de recursos e doações para manutenção dos abrigos.</li>
+      </ul>
+    </section>
+
+    <!-- IMPACTO -->
+    <section id="impacto" class="container">
+      <h2>Impacto do Projeto</h2>
+      <p>
+        Desde o início, já ajudamos mais de <strong>1.200 animais</strong> a encontrarem um lar e receberam tratamento veterinário completo.
+        Cada resgate é uma história de esperança e amor que se renova a cada adoção.
+      </p>
+
+      <h3>Resultados alcançados</h3>
+      <ul>
+        <li>+1.200 animais resgatados e tratados</li>
+        <li>+800 adoções realizadas</li>
+        <li>+300 voluntários ativos</li>
+      </ul>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="container contato">
+      <h2>Fale Conosco</h2>
+      <p>contato@planetaanimal.org • (11) 96234-5978</p>
+
+      <div class="redes-sociais">
+        <a class="social" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a class="social" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a class="social" href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+
+      <a href="#" class="botao-mensagem">Enviar Mensagem</a>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Planeta Animal | Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Script para atualizar o ano -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const year = new Date().getFullYear();
+      const el = document.getElementById('year');
+      if (el) el.textContent = year;
+    });
+  </script>
+
+</body>
+</html>
